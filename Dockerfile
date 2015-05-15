@@ -34,10 +34,10 @@ RUN \
   curl -fsLS -O https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz && \
   curl -fsLS -O http://nodejs.org/dist/v0.12.3/node-v0.12.3-linux-x64.tar.gz && \
   curl -fsLS -O https://bootstrap.pypa.io/get-pip.py && \
-  curl -fsLS -o freight.tar.gz https://github.com/getsentry/freight/archive/c236df6ba6735b60f6f14d7fef4b09b59796d353.tar.gz && \
+  curl -fsLS -o freight.tar.gz https://github.com/getsentry/freight/archive/c2e23616b36e3595b1cc2456b934d2392f084f52.tar.gz && \
   echo '90d27e14ea7e03570026850e2e50ba71ad20b7eb31035aada1cf3def8f8d4916  Python-2.7.9.tar.xz' | sha256sum -c && \
   echo '22478ba86906666a95010e4eb73763535211719a53da9139b95daeb5b6c170b8  node-v0.12.3-linux-x64.tar.gz' | sha256sum -c && \
-  echo '1a699248611eb3b6c6231c9aaac1f4dd04bce54a2eec5be581c61bdbdad4ac05  freight.tar.gz' | sha256sum -c && \
+  echo 'ee2292c737d57e296a17fb112573794e551dff6504e41739f78508ab941dd84d  freight.tar.gz' | sha256sum -c && \
   tar -xJf Python-2.7.9.tar.xz && \
   tar -C /app/.local/node --strip-components=1 -xzf node-v0.12.3-linux-x64.tar.gz && \
   cd /tmp/src/Python-2.7.9 && \
